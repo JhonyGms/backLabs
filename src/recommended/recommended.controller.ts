@@ -22,7 +22,10 @@ export class RecommendedController {
 
     return res.status(HttpStatus.OK).json({
       message: 'Request Complet',
-      data,
+      data: {
+        textRecipe: 'comida',
+        textRestaurant: 'pan',
+      },
     });
   }
 }
